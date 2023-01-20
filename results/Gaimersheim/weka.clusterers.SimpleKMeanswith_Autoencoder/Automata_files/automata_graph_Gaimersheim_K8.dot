@@ -1,0 +1,42 @@
+digraph {
+	fake [style=invisible]
+	Car_accelerating
+	Car_in_a_roundabout [root=true]
+	Car_driving_at_a_constant_speed
+	Approaching_a_crossroad_or_an_obstacle
+	Car_turning
+	Accelerating_after_crossing_or_turning
+	Car_braking
+	Braking_before_crossing_or_turning
+	fake -> Car_in_a_roundabout [style=bold]
+	Approaching_a_crossroad_or_an_obstacle -> Approaching_a_crossroad_or_an_obstacle [label=e_1]
+	Approaching_a_crossroad_or_an_obstacle -> Car_driving_at_a_constant_speed [label=e_12]
+	Approaching_a_crossroad_or_an_obstacle -> Braking_before_crossing_or_turning [label=e_2]
+	Approaching_a_crossroad_or_an_obstacle -> Car_braking [label=e_18]
+	Car_in_a_roundabout -> Car_in_a_roundabout [label=e_3]
+	Car_in_a_roundabout -> Car_driving_at_a_constant_speed [label=e_1]
+	Car_in_a_roundabout -> Accelerating_after_crossing_or_turning [label=e_14]
+	Car_in_a_roundabout -> Car_accelerating [label=e_5]
+	Car_in_a_roundabout -> Car_braking [label=e_4]
+	Car_turning -> Car_in_a_roundabout [label=e_11]
+	Car_turning -> Braking_before_crossing_or_turning [label=e_1]
+	Car_driving_at_a_constant_speed -> Approaching_a_crossroad_or_an_obstacle [label=e_18]
+	Car_driving_at_a_constant_speed -> Car_driving_at_a_constant_speed [label=e_1]
+	Car_driving_at_a_constant_speed -> Car_accelerating [label=e_12]
+	Car_driving_at_a_constant_speed -> Car_braking [label=e_3]
+	Accelerating_after_crossing_or_turning -> Car_in_a_roundabout [label=e_1]
+	Accelerating_after_crossing_or_turning -> Car_accelerating [label=e_29]
+	Braking_before_crossing_or_turning -> Car_in_a_roundabout [label=e_4]
+	Braking_before_crossing_or_turning -> Car_turning [label=e_9]
+	Braking_before_crossing_or_turning -> Braking_before_crossing_or_turning [label=e_2]
+	Braking_before_crossing_or_turning -> Car_braking [label=e_6]
+	Car_accelerating -> Approaching_a_crossroad_or_an_obstacle [label=e_8]
+	Car_accelerating -> Car_in_a_roundabout [label=e_1]
+	Car_accelerating -> Car_driving_at_a_constant_speed [label=e_19]
+	Car_accelerating -> Accelerating_after_crossing_or_turning [label=e_16]
+	Car_accelerating -> Car_braking [label=e_2]
+	Car_braking -> Car_in_a_roundabout [label=e_6]
+	Car_braking -> Car_turning [label=e_1]
+	Car_braking -> Car_braking [label=e_3]
+	Car_braking -> Braking_before_crossing_or_turning [label=e_17]
+}

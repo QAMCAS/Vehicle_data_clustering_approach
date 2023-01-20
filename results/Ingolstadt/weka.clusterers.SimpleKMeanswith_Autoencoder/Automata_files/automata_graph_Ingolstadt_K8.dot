@@ -1,0 +1,33 @@
+digraph {
+	fake [style=invisible]
+	Car_driving_at_a_constant_speed
+	Approaching_a_crossroad_or_an_obstacle
+	Car_accelerating_after_stopping_at_red_traffic_light_or_traffic_jam [root=true]
+	Car_turning
+	Car_stopping_at_red_traffic_light_or_traffic_jam
+	Braking_before_crossing_or_turning
+	fake -> Car_accelerating_after_stopping_at_red_traffic_light_or_traffic_jam [style=bold]
+	Car_driving_at_a_constant_speed -> Braking_before_crossing_or_turning [label=e_5]
+	Car_driving_at_a_constant_speed -> Car_accelerating_after_stopping_at_red_traffic_light_or_traffic_jam [label=e_2]
+	Car_driving_at_a_constant_speed -> Approaching_a_crossroad_or_an_obstacle [label=e_102]
+	Car_turning -> Car_turning [label=e_22]
+	Car_turning -> Approaching_a_crossroad_or_an_obstacle [label=e_20]
+	Car_turning -> Car_stopping_at_red_traffic_light_or_traffic_jam [label=e_1]
+	Car_accelerating_after_stopping_at_red_traffic_light_or_traffic_jam -> Car_accelerating_after_stopping_at_red_traffic_light_or_traffic_jam [label=e_1]
+	Car_accelerating_after_stopping_at_red_traffic_light_or_traffic_jam -> Approaching_a_crossroad_or_an_obstacle [label=e_58]
+	Approaching_a_crossroad_or_an_obstacle -> Car_driving_at_a_constant_speed [label=e_55]
+	Approaching_a_crossroad_or_an_obstacle -> Car_turning [label=e_12]
+	Approaching_a_crossroad_or_an_obstacle -> Car_accelerating_after_stopping_at_red_traffic_light_or_traffic_jam [label=e_26]
+	Approaching_a_crossroad_or_an_obstacle -> Approaching_a_crossroad_or_an_obstacle [label=e_60]
+	Approaching_a_crossroad_or_an_obstacle -> Braking_before_crossing_or_turning [label=e_17]
+	Approaching_a_crossroad_or_an_obstacle -> Car_stopping_at_red_traffic_light_or_traffic_jam [label=e_3]
+	Braking_before_crossing_or_turning -> Car_driving_at_a_constant_speed [label=e_2]
+	Braking_before_crossing_or_turning -> Car_turning [label=e_6]
+	Braking_before_crossing_or_turning -> Car_accelerating_after_stopping_at_red_traffic_light_or_traffic_jam [label=e_1]
+	Braking_before_crossing_or_turning -> Approaching_a_crossroad_or_an_obstacle [label=e_32]
+	Braking_before_crossing_or_turning -> Braking_before_crossing_or_turning [label=e_10]
+	Braking_before_crossing_or_turning -> Car_stopping_at_red_traffic_light_or_traffic_jam [label=e_16]
+	Car_stopping_at_red_traffic_light_or_traffic_jam -> Car_turning [label=e_4]
+	Car_stopping_at_red_traffic_light_or_traffic_jam -> Approaching_a_crossroad_or_an_obstacle [label=e_2]
+	Car_stopping_at_red_traffic_light_or_traffic_jam -> Braking_before_crossing_or_turning [label=e_17]
+}

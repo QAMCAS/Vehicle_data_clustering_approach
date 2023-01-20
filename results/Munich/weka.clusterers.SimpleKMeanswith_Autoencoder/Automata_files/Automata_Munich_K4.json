@@ -1,0 +1,80 @@
+{
+    "accepting_states": [],
+    "alphabet": [
+        "e_8",
+        "e_1",
+        "e_31",
+        "e_18",
+        "e_18",
+        "e_32",
+        "e_15",
+        "e_3",
+        "e_15",
+        "e_21",
+        "e_12"
+    ],
+    "initial_state": "Approaching_a_crossroad_or_an_obstacle",
+    "states": [
+        "Car_stopping_at_red_traffic_light_or_traffic_jam",
+        "Accelerating_after_crossing_or_turning",
+        "Approaching_a_crossroad_or_an_obstacle",
+        "Car_turning"
+    ],
+    "transitions": [
+        [
+            "Car_stopping_at_red_traffic_light_or_traffic_jam",
+            "e_8",
+            "Car_stopping_at_red_traffic_light_or_traffic_jam"
+        ],
+        [
+            "Car_stopping_at_red_traffic_light_or_traffic_jam",
+            "e_1",
+            "Accelerating_after_crossing_or_turning"
+        ],
+        [
+            "Car_stopping_at_red_traffic_light_or_traffic_jam",
+            "e_31",
+            "Approaching_a_crossroad_or_an_obstacle"
+        ],
+        [
+            "Accelerating_after_crossing_or_turning",
+            "e_18",
+            "Approaching_a_crossroad_or_an_obstacle"
+        ],
+        [
+            "Accelerating_after_crossing_or_turning",
+            "e_18",
+            "Car_turning"
+        ],
+        [
+            "Approaching_a_crossroad_or_an_obstacle",
+            "e_32",
+            "Car_stopping_at_red_traffic_light_or_traffic_jam"
+        ],
+        [
+            "Approaching_a_crossroad_or_an_obstacle",
+            "e_15",
+            "Accelerating_after_crossing_or_turning"
+        ],
+        [
+            "Approaching_a_crossroad_or_an_obstacle",
+            "e_3",
+            "Approaching_a_crossroad_or_an_obstacle"
+        ],
+        [
+            "Approaching_a_crossroad_or_an_obstacle",
+            "e_15",
+            "Car_turning"
+        ],
+        [
+            "Car_turning",
+            "e_21",
+            "Accelerating_after_crossing_or_turning"
+        ],
+        [
+            "Car_turning",
+            "e_12",
+            "Approaching_a_crossroad_or_an_obstacle"
+        ]
+    ]
+}

@@ -1,0 +1,17 @@
+digraph {
+	fake [style=invisible]
+	Car_stopping_at_red_traffic_light_or_traffic_jam
+	Accelerating_after_crossing_or_turning
+	Approaching_a_crossroad_or_an_obstacle [root=true]
+	Car_turning
+	fake -> Approaching_a_crossroad_or_an_obstacle [style=bold]
+	Car_stopping_at_red_traffic_light_or_traffic_jam -> Car_stopping_at_red_traffic_light_or_traffic_jam [label=e_8]
+	Car_stopping_at_red_traffic_light_or_traffic_jam -> Accelerating_after_crossing_or_turning [label=e_1]
+	Car_stopping_at_red_traffic_light_or_traffic_jam -> Approaching_a_crossroad_or_an_obstacle [label=e_31]
+	Accelerating_after_crossing_or_turning -> Car_turning [label=e_18]
+	Approaching_a_crossroad_or_an_obstacle -> Car_stopping_at_red_traffic_light_or_traffic_jam [label=e_32]
+	Approaching_a_crossroad_or_an_obstacle -> Car_turning [label=e_15]
+	Approaching_a_crossroad_or_an_obstacle -> Approaching_a_crossroad_or_an_obstacle [label=e_3]
+	Car_turning -> Accelerating_after_crossing_or_turning [label=e_21]
+	Car_turning -> Approaching_a_crossroad_or_an_obstacle [label=e_12]
+}

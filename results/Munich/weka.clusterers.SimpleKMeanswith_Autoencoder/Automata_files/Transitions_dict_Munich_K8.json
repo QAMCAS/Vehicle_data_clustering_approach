@@ -1,0 +1,163 @@
+{
+    "Accelerating_after_crossing_or_turning": {
+        "Accelerating_after_crossing_or_turning": {
+            "nbr_edges": 2
+        },
+        "Approaching_a_crossroad_or_an_obstacle": {
+            "nbr_edges": 94
+        },
+        "Braking_before_crossing_or_turning": {
+            "nbr_edges": 0
+        },
+        "Car_accelerating_after_stopping_at_red_traffic_light_or_traffic_jam": {
+            "nbr_edges": 17
+        },
+        "Car_braking": {
+            "nbr_edges": 0
+        },
+        "Car_stopping_at_red_traffic_light_or_traffic_jam": {
+            "nbr_edges": 0
+        },
+        "Car_turning": {
+            "nbr_edges": 0
+        }
+    },
+    "Approaching_a_crossroad_or_an_obstacle": {
+        "Accelerating_after_crossing_or_turning": {
+            "nbr_edges": 39
+        },
+        "Approaching_a_crossroad_or_an_obstacle": {
+            "nbr_edges": 66
+        },
+        "Braking_before_crossing_or_turning": {
+            "nbr_edges": 12
+        },
+        "Car_accelerating_after_stopping_at_red_traffic_light_or_traffic_jam": {
+            "nbr_edges": 9
+        },
+        "Car_braking": {
+            "nbr_edges": 0
+        },
+        "Car_stopping_at_red_traffic_light_or_traffic_jam": {
+            "nbr_edges": 13
+        },
+        "Car_turning": {
+            "nbr_edges": 0
+        }
+    },
+    "Braking_before_crossing_or_turning": {
+        "Accelerating_after_crossing_or_turning": {
+            "nbr_edges": 0
+        },
+        "Approaching_a_crossroad_or_an_obstacle": {
+            "nbr_edges": 32
+        },
+        "Braking_before_crossing_or_turning": {
+            "nbr_edges": 4
+        },
+        "Car_accelerating_after_stopping_at_red_traffic_light_or_traffic_jam": {
+            "nbr_edges": 3
+        },
+        "Car_braking": {
+            "nbr_edges": 1
+        },
+        "Car_stopping_at_red_traffic_light_or_traffic_jam": {
+            "nbr_edges": 16
+        },
+        "Car_turning": {
+            "nbr_edges": 8
+        }
+    },
+    "Car_accelerating_after_stopping_at_red_traffic_light_or_traffic_jam": {
+        "Accelerating_after_crossing_or_turning": {
+            "nbr_edges": 24
+        },
+        "Approaching_a_crossroad_or_an_obstacle": {
+            "nbr_edges": 10
+        },
+        "Braking_before_crossing_or_turning": {
+            "nbr_edges": 2
+        },
+        "Car_accelerating_after_stopping_at_red_traffic_light_or_traffic_jam": {
+            "nbr_edges": 2
+        },
+        "Car_braking": {
+            "nbr_edges": 0
+        },
+        "Car_stopping_at_red_traffic_light_or_traffic_jam": {
+            "nbr_edges": 0
+        },
+        "Car_turning": {
+            "nbr_edges": 12
+        }
+    },
+    "Car_braking": {
+        "Accelerating_after_crossing_or_turning": {
+            "nbr_edges": 0
+        },
+        "Approaching_a_crossroad_or_an_obstacle": {
+            "nbr_edges": 0
+        },
+        "Braking_before_crossing_or_turning": {
+            "nbr_edges": 0
+        },
+        "Car_accelerating_after_stopping_at_red_traffic_light_or_traffic_jam": {
+            "nbr_edges": 0
+        },
+        "Car_braking": {
+            "nbr_edges": 0
+        },
+        "Car_stopping_at_red_traffic_light_or_traffic_jam": {
+            "nbr_edges": 10
+        },
+        "Car_turning": {
+            "nbr_edges": 0
+        }
+    },
+    "Car_stopping_at_red_traffic_light_or_traffic_jam": {
+        "Accelerating_after_crossing_or_turning": {
+            "nbr_edges": 0
+        },
+        "Approaching_a_crossroad_or_an_obstacle": {
+            "nbr_edges": 10
+        },
+        "Braking_before_crossing_or_turning": {
+            "nbr_edges": 24
+        },
+        "Car_accelerating_after_stopping_at_red_traffic_light_or_traffic_jam": {
+            "nbr_edges": 1
+        },
+        "Car_braking": {
+            "nbr_edges": 9
+        },
+        "Car_stopping_at_red_traffic_light_or_traffic_jam": {
+            "nbr_edges": 13
+        },
+        "Car_turning": {
+            "nbr_edges": 0
+        }
+    },
+    "Car_turning": {
+        "Accelerating_after_crossing_or_turning": {
+            "nbr_edges": 1
+        },
+        "Approaching_a_crossroad_or_an_obstacle": {
+            "nbr_edges": 0
+        },
+        "Braking_before_crossing_or_turning": {
+            "nbr_edges": 6
+        },
+        "Car_accelerating_after_stopping_at_red_traffic_light_or_traffic_jam": {
+            "nbr_edges": 13
+        },
+        "Car_braking": {
+            "nbr_edges": 0
+        },
+        "Car_stopping_at_red_traffic_light_or_traffic_jam": {
+            "nbr_edges": 0
+        },
+        "Car_turning": {
+            "nbr_edges": 0
+        }
+    }
+}

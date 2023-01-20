@@ -1,0 +1,86 @@
+{
+    "accepting_states": [],
+    "alphabet": [
+        "e_1",
+        "e_3",
+        "e_29",
+        "e_4",
+        "e_16",
+        "e_9",
+        "e_18",
+        "e_4",
+        "e_14",
+        "e_21",
+        "e_2",
+        "e_4"
+    ],
+    "initial_state": "Car_turning",
+    "states": [
+        "Accelerating_after_crossing_or_turning",
+        "Braking_before_crossing_or_turning",
+        "Car_turning",
+        "Approaching_a_crossroad_or_an_obstacle"
+    ],
+    "transitions": [
+        [
+            "Accelerating_after_crossing_or_turning",
+            "e_1",
+            "Accelerating_after_crossing_or_turning"
+        ],
+        [
+            "Accelerating_after_crossing_or_turning",
+            "e_3",
+            "Car_turning"
+        ],
+        [
+            "Accelerating_after_crossing_or_turning",
+            "e_29",
+            "Approaching_a_crossroad_or_an_obstacle"
+        ],
+        [
+            "Braking_before_crossing_or_turning",
+            "e_4",
+            "Braking_before_crossing_or_turning"
+        ],
+        [
+            "Braking_before_crossing_or_turning",
+            "e_16",
+            "Car_turning"
+        ],
+        [
+            "Braking_before_crossing_or_turning",
+            "e_9",
+            "Approaching_a_crossroad_or_an_obstacle"
+        ],
+        [
+            "Car_turning",
+            "e_18",
+            "Accelerating_after_crossing_or_turning"
+        ],
+        [
+            "Car_turning",
+            "e_4",
+            "Braking_before_crossing_or_turning"
+        ],
+        [
+            "Approaching_a_crossroad_or_an_obstacle",
+            "e_14",
+            "Accelerating_after_crossing_or_turning"
+        ],
+        [
+            "Approaching_a_crossroad_or_an_obstacle",
+            "e_21",
+            "Braking_before_crossing_or_turning"
+        ],
+        [
+            "Approaching_a_crossroad_or_an_obstacle",
+            "e_2",
+            "Car_turning"
+        ],
+        [
+            "Approaching_a_crossroad_or_an_obstacle",
+            "e_4",
+            "Approaching_a_crossroad_or_an_obstacle"
+        ]
+    ]
+}

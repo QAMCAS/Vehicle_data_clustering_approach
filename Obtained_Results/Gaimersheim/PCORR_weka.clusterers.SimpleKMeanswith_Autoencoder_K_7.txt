@@ -1,0 +1,10 @@
+Cluster;Nb of total episodes;Percentage of Pearson correlation
+0;40;66.25
+1;37;64.86
+2;24;65.63
+3;34;60.3
+4;33;65.91
+5;23;67.39
+6;40;66.25
+Final Average:65.23
+65.23
