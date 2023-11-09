@@ -55,6 +55,10 @@ For data preprocessing, we provide the following scripts:
 
 3. Data_cleansing.py: This script replaces all brake pressure values which are below or equal to 0.2  with the value 0 to obtain more precise results. It also filters out the timestamps attribute values, which are not considered when clustering the data. The clean data (including timestamps) and filtered data (without timestamps) are saved in the "Clustering-input_data" folder"
 
+4. Qualitative_abstraction.py: This script is used as part of the approach extension in order to investigate whether data abstraction improve the clustering results or not. The script provides 5 abstraction functions. 2 functions compute 2 different abstraction models for the steering angle and 3 functions compute 3  different abstraction models for the vehicle speed. It also provide 1 abstraction model for the acceleration pedal and 1 model for the brake pressure. The resulting abstracted clustering input data is saved in the folder results/<location>/Abstraction_results.
+In addition, this script perfoms clustering using 6 combinations of the computed abstracted models of the steering angle and vehicle speed. The clustering validation results for the Pearson correlation metric and the three internal validation metric; Sihlouette score, CH index and DB index computed for clustering when using these combinations are also saved in results/<location>/Abstraction_results. For comparing the clustering results with the one sobtained using the  clustering approach  with the original data regarding test case generation, we create in the script,  the Cluster-Episode Graphs using these combinations with the clusters and episodes obtained using K-means combined with an auto-enocder. Similarly, the resulting graphs are saved in results/<location>/Abstraction_results.
+   
+
 II. Data clustering:
 
 For data clustering we provide two scripts:
