@@ -1,0 +1,144 @@
+{
+    "accepting_states": [],
+    "alphabet": [
+        "6",
+        "4",
+        "5",
+        "2",
+        "1",
+        "8",
+        "2",
+        "4",
+        "2",
+        "3",
+        "1",
+        "3",
+        "21",
+        "11",
+        "6",
+        "14",
+        "1",
+        "6",
+        "1",
+        "1",
+        "1"
+    ],
+    "initial_state": "Car in a roundabout",
+    "states": [
+        "Accelerating after crossing or turning",
+        "Approaching a crossroad or an obstacle",
+        "Driving straight on a highway",
+        "Car in a roundabout",
+        "Car turning",
+        "Car braking",
+        "Braking before crossing or turning",
+        "Car driving at a constant speed"
+    ],
+    "transitions": [
+        [
+            "Accelerating after crossing or turning",
+            "6",
+            "Approaching a crossroad or an obstacle"
+        ],
+        [
+            "Accelerating after crossing or turning",
+            "4",
+            "Driving straight on a highway"
+        ],
+        [
+            "Accelerating after crossing or turning",
+            "5",
+            "Car braking"
+        ],
+        [
+            "Approaching a crossroad or an obstacle",
+            "2",
+            "Accelerating after crossing or turning"
+        ],
+        [
+            "Approaching a crossroad or an obstacle",
+            "1",
+            "Driving straight on a highway"
+        ],
+        [
+            "Approaching a crossroad or an obstacle",
+            "8",
+            "Car in a roundabout"
+        ],
+        [
+            "Approaching a crossroad or an obstacle",
+            "2",
+            "Car turning"
+        ],
+        [
+            "Driving straight on a highway",
+            "4",
+            "Approaching a crossroad or an obstacle"
+        ],
+        [
+            "Driving straight on a highway",
+            "2",
+            "Car driving at a constant speed"
+        ],
+        [
+            "Car in a roundabout",
+            "3",
+            "Approaching a crossroad or an obstacle"
+        ],
+        [
+            "Car in a roundabout",
+            "1",
+            "Car in a roundabout"
+        ],
+        [
+            "Car in a roundabout",
+            "3",
+            "Car turning"
+        ],
+        [
+            "Car in a roundabout",
+            "21",
+            "Braking before crossing or turning"
+        ],
+        [
+            "Car turning",
+            "11",
+            "Car in a roundabout"
+        ],
+        [
+            "Car braking",
+            "6",
+            "Car turning"
+        ],
+        [
+            "Braking before crossing or turning",
+            "14",
+            "Accelerating after crossing or turning"
+        ],
+        [
+            "Braking before crossing or turning",
+            "1",
+            "Driving straight on a highway"
+        ],
+        [
+            "Braking before crossing or turning",
+            "6",
+            "Car in a roundabout"
+        ],
+        [
+            "Braking before crossing or turning",
+            "1",
+            "Car braking"
+        ],
+        [
+            "Car driving at a constant speed",
+            "1",
+            "Car in a roundabout"
+        ],
+        [
+            "Car driving at a constant speed",
+            "1",
+            "Braking before crossing or turning"
+        ]
+    ]
+}

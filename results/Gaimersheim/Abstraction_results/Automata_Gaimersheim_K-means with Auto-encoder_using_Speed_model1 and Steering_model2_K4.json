@@ -1,0 +1,62 @@
+{
+    "accepting_states": [],
+    "alphabet": [
+        "5",
+        "6",
+        "6",
+        "6",
+        "6",
+        "18",
+        "1",
+        "1"
+    ],
+    "initial_state": "Car turning",
+    "states": [
+        "Braking before crossing or turning",
+        "Approaching a crossroad or an obstacle",
+        "Car braking",
+        "Car turning"
+    ],
+    "transitions": [
+        [
+            "Braking before crossing or turning",
+            "5",
+            "Approaching a crossroad or an obstacle"
+        ],
+        [
+            "Braking before crossing or turning",
+            "6",
+            "Car braking"
+        ],
+        [
+            "Braking before crossing or turning",
+            "6",
+            "Car turning"
+        ],
+        [
+            "Approaching a crossroad or an obstacle",
+            "6",
+            "Car turning"
+        ],
+        [
+            "Car braking",
+            "6",
+            "Car turning"
+        ],
+        [
+            "Car turning",
+            "18",
+            "Braking before crossing or turning"
+        ],
+        [
+            "Car turning",
+            "1",
+            "Approaching a crossroad or an obstacle"
+        ],
+        [
+            "Car turning",
+            "1",
+            "Car turning"
+        ]
+    ]
+}

@@ -1,0 +1,144 @@
+{
+    "accepting_states": [],
+    "alphabet": [
+        "2",
+        "5",
+        "4",
+        "1",
+        "2",
+        "1",
+        "2",
+        "22",
+        "22",
+        "18",
+        "18",
+        "3",
+        "2",
+        "28",
+        "2",
+        "4",
+        "1",
+        "4",
+        "2",
+        "54",
+        "54"
+    ],
+    "initial_state": "Approaching a crossroad or an obstacle",
+    "states": [
+        "Car braking",
+        "Braking before crossing or turning",
+        "Car in a roundabout",
+        "Car braking",
+        "Car turning",
+        "Approaching a crossroad or an obstacle",
+        "Accelerating after crossing or turning",
+        "Approaching a crossroad or an obstacle"
+    ],
+    "transitions": [
+        [
+            "Car braking",
+            "2",
+            "Car in a roundabout"
+        ],
+        [
+            "Car braking",
+            "5",
+            "Car turning"
+        ],
+        [
+            "Car braking",
+            "4",
+            "Accelerating after crossing or turning"
+        ],
+        [
+            "Braking before crossing or turning",
+            "1",
+            "Car turning"
+        ],
+        [
+            "Car in a roundabout",
+            "2",
+            "Approaching a crossroad or an obstacle"
+        ],
+        [
+            "Car in a roundabout",
+            "1",
+            "Accelerating after crossing or turning"
+        ],
+        [
+            "Car in a roundabout",
+            "2",
+            "Approaching a crossroad or an obstacle"
+        ],
+        [
+            "Car turning",
+            "22",
+            "Approaching a crossroad or an obstacle"
+        ],
+        [
+            "Car turning",
+            "22",
+            "Approaching a crossroad or an obstacle"
+        ],
+        [
+            "Approaching a crossroad or an obstacle",
+            "18",
+            "Car braking"
+        ],
+        [
+            "Approaching a crossroad or an obstacle",
+            "18",
+            "Car braking"
+        ],
+        [
+            "Approaching a crossroad or an obstacle",
+            "3",
+            "Car turning"
+        ],
+        [
+            "Approaching a crossroad or an obstacle",
+            "2",
+            "Approaching a crossroad or an obstacle"
+        ],
+        [
+            "Approaching a crossroad or an obstacle",
+            "28",
+            "Accelerating after crossing or turning"
+        ],
+        [
+            "Approaching a crossroad or an obstacle",
+            "2",
+            "Approaching a crossroad or an obstacle"
+        ],
+        [
+            "Accelerating after crossing or turning",
+            "4",
+            "Car braking"
+        ],
+        [
+            "Accelerating after crossing or turning",
+            "1",
+            "Braking before crossing or turning"
+        ],
+        [
+            "Accelerating after crossing or turning",
+            "4",
+            "Car braking"
+        ],
+        [
+            "Accelerating after crossing or turning",
+            "2",
+            "Car turning"
+        ],
+        [
+            "Accelerating after crossing or turning",
+            "54",
+            "Approaching a crossroad or an obstacle"
+        ],
+        [
+            "Accelerating after crossing or turning",
+            "54",
+            "Approaching a crossroad or an obstacle"
+        ]
+    ]
+}

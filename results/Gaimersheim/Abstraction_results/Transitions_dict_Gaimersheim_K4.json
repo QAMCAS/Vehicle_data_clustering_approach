@@ -1,0 +1,58 @@
+{
+    "Accelerating after crossing or turning": {
+        "Accelerating after crossing or turning": {
+            "nbr_edges": 1
+        },
+        "Approaching a crossroad or an obstacle": {
+            "nbr_edges": 20
+        },
+        "Braking before crossing or turning": {
+            "nbr_edges": 2
+        },
+        "Car turning": {
+            "nbr_edges": 4
+        }
+    },
+    "Approaching a crossroad or an obstacle": {
+        "Accelerating after crossing or turning": {
+            "nbr_edges": 5
+        },
+        "Approaching a crossroad or an obstacle": {
+            "nbr_edges": 0
+        },
+        "Braking before crossing or turning": {
+            "nbr_edges": 13
+        },
+        "Car turning": {
+            "nbr_edges": 1
+        }
+    },
+    "Braking before crossing or turning": {
+        "Accelerating after crossing or turning": {
+            "nbr_edges": 9
+        },
+        "Approaching a crossroad or an obstacle": {
+            "nbr_edges": 0
+        },
+        "Braking before crossing or turning": {
+            "nbr_edges": 0
+        },
+        "Car turning": {
+            "nbr_edges": 6
+        }
+    },
+    "Car turning": {
+        "Accelerating after crossing or turning": {
+            "nbr_edges": 11
+        },
+        "Approaching a crossroad or an obstacle": {
+            "nbr_edges": 0
+        },
+        "Braking before crossing or turning": {
+            "nbr_edges": 0
+        },
+        "Car turning": {
+            "nbr_edges": 0
+        }
+    }
+}

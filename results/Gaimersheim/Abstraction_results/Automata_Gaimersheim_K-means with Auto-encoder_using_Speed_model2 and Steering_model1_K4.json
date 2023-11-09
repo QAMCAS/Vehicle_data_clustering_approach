@@ -1,0 +1,80 @@
+{
+    "accepting_states": [],
+    "alphabet": [
+        "6",
+        "1",
+        "4",
+        "11",
+        "1",
+        "3",
+        "1",
+        "22",
+        "11",
+        "3",
+        "12"
+    ],
+    "initial_state": "Accelerating after crossing or turning",
+    "states": [
+        "Approaching a crossroad or an obstacle",
+        "Car turning",
+        "Accelerating after crossing or turning",
+        "Braking before crossing or turning"
+    ],
+    "transitions": [
+        [
+            "Approaching a crossroad or an obstacle",
+            "6",
+            "Car turning"
+        ],
+        [
+            "Approaching a crossroad or an obstacle",
+            "1",
+            "Accelerating after crossing or turning"
+        ],
+        [
+            "Approaching a crossroad or an obstacle",
+            "4",
+            "Braking before crossing or turning"
+        ],
+        [
+            "Car turning",
+            "11",
+            "Accelerating after crossing or turning"
+        ],
+        [
+            "Car turning",
+            "1",
+            "Braking before crossing or turning"
+        ],
+        [
+            "Accelerating after crossing or turning",
+            "3",
+            "Car turning"
+        ],
+        [
+            "Accelerating after crossing or turning",
+            "1",
+            "Accelerating after crossing or turning"
+        ],
+        [
+            "Accelerating after crossing or turning",
+            "22",
+            "Braking before crossing or turning"
+        ],
+        [
+            "Braking before crossing or turning",
+            "11",
+            "Approaching a crossroad or an obstacle"
+        ],
+        [
+            "Braking before crossing or turning",
+            "3",
+            "Car turning"
+        ],
+        [
+            "Braking before crossing or turning",
+            "12",
+            "Accelerating after crossing or turning"
+        ]
+    ]
+}

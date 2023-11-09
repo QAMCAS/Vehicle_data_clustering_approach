@@ -1,0 +1,132 @@
+{
+    "accepting_states": [],
+    "alphabet": [
+        "14",
+        "14",
+        "4",
+        "28",
+        "4",
+        "4",
+        "28",
+        "21",
+        "4",
+        "2",
+        "4",
+        "5",
+        "4",
+        "6",
+        "6",
+        "30",
+        "14",
+        "30",
+        "2"
+    ],
+    "initial_state": "Car driving at a constant speed",
+    "states": [
+        "Car braking",
+        "Car driving at a constant speed",
+        "Accelerating after crossing or turning",
+        "Approaching a crossroad or an obstacle",
+        "Accelerating after crossing or turning",
+        "Car driving at a constant speed",
+        "Driving straight on a highway",
+        "Braking before crossing or turning"
+    ],
+    "transitions": [
+        [
+            "Car braking",
+            "14",
+            "Car driving at a constant speed"
+        ],
+        [
+            "Car braking",
+            "14",
+            "Car driving at a constant speed"
+        ],
+        [
+            "Car braking",
+            "4",
+            "Braking before crossing or turning"
+        ],
+        [
+            "Car driving at a constant speed",
+            "28",
+            "Car driving at a constant speed"
+        ],
+        [
+            "Car driving at a constant speed",
+            "4",
+            "Accelerating after crossing or turning"
+        ],
+        [
+            "Car driving at a constant speed",
+            "4",
+            "Accelerating after crossing or turning"
+        ],
+        [
+            "Car driving at a constant speed",
+            "28",
+            "Car driving at a constant speed"
+        ],
+        [
+            "Car driving at a constant speed",
+            "21",
+            "Braking before crossing or turning"
+        ],
+        [
+            "Accelerating after crossing or turning",
+            "4",
+            "Accelerating after crossing or turning"
+        ],
+        [
+            "Accelerating after crossing or turning",
+            "2",
+            "Approaching a crossroad or an obstacle"
+        ],
+        [
+            "Accelerating after crossing or turning",
+            "4",
+            "Accelerating after crossing or turning"
+        ],
+        [
+            "Approaching a crossroad or an obstacle",
+            "5",
+            "Car braking"
+        ],
+        [
+            "Approaching a crossroad or an obstacle",
+            "4",
+            "Driving straight on a highway"
+        ],
+        [
+            "Approaching a crossroad or an obstacle",
+            "6",
+            "Braking before crossing or turning"
+        ],
+        [
+            "Driving straight on a highway",
+            "6",
+            "Car braking"
+        ],
+        [
+            "Braking before crossing or turning",
+            "30",
+            "Car driving at a constant speed"
+        ],
+        [
+            "Braking before crossing or turning",
+            "14",
+            "Approaching a crossroad or an obstacle"
+        ],
+        [
+            "Braking before crossing or turning",
+            "30",
+            "Car driving at a constant speed"
+        ],
+        [
+            "Braking before crossing or turning",
+            "2",
+            "Driving straight on a highway"
+        ]
+    ]
+}

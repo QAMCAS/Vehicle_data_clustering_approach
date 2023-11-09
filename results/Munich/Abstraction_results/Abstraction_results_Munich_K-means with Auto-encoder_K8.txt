@@ -1,0 +1,6 @@
+Speed_model1 and Steering_model1 60.08 0.9946 0.0525 872888.049 0.2449 15
+Speed_model1 and Steering_model2 45.73 0.9086 0.1786    755.579 0.1129 20
+Speed_model2 and Steering_model1 60.08 0.9946 0.0525 872888.049 0.3276 15
+Speed_model2 and Steering_model2 45.73 0.9086 0.1786    755.579 0.1513 20
+Speed_model3 and Steering_model1 48.36 0.9128 0.1131   3195.493 0.2355 20
+Speed_model3 and Steering_model2 54.62 0.9251 0.0834   3109.197 0.2201 25
