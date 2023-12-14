@@ -6,11 +6,12 @@ This repository includes modified data and source code of scripts we used for ob
 
 2. Chetouane, Nour, and Franz Wotawa. "On the application of clustering for extracting driving scenarios from vehicle data." Machine Learning with Applications 9 (2022): 100377.
 
-3. The paper "Extracting temporal models from data episodes,” submitted and to be published soon in Proceedings
-of the 22nd IEEE International Conference on Software Quality, Reliability, and Security (QRS), Guangzhou, China, December 2022.
+3. Chetouane, Nour, and Franz Wotawa. "Extracting temporal models from data episodes." 2022 IEEE 22nd International Conference on Software Quality, Reliability and Security (QRS). IEEE, 2022.
 
-4. The paper "Generating concrete test cases from vehicle data using models obtained from clustering" submitted and under review to the 3rd International Workshop on Artificial Intelligence in Software Testing (AIST 2023).
+4. Chetouane, Nour, and Franz Wotawa. "Generating concrete test cases from vehicle data using models obtained from clustering." 2023 IEEE International Conference on Software Testing, Verification and Validation Workshops (ICSTW). IEEE, 2023.
 
+5. Chetouane, Nour, and Franz Wotawa. "Using Data Abstraction for Clustering in the Context of Test Case Generation." Accepted and to be published in  2023 IEEE 22nd International Conference on Software Quality, Reliability and Security (QRS). IEEE, 2023.
+   
 # Original data:
 
 In this work, we make use of the public available A2D2 data [1]  originally downloaded from https://www.a2d2.audi/a2d2/en/download.html
@@ -45,7 +46,7 @@ This framework for carrying out our experiments comprises the following three pa
 
 I. Data preprocessing:
 
-For data preprocessing, we provide the following three scripts:
+For data preprocessing, we provide the following scripts:
 
 1. Data_interpolation.py: This script performs Cubic spline interpolation on the original data to synchronize all bus signal values. The interpolated data for each city is saved in the  "Interpolated_data" folder.
 
@@ -53,6 +54,10 @@ For data preprocessing, we provide the following three scripts:
    In this work, we only make use of four main signals which are: 'accelerator_pedal', 'brake_pressure', 'steering_angle_calculated', and 'vehicle_speed'. It is possible to use all signals provided in the A2D2 data set if required. The data in .arff format for each city is saved in the "arff_data" folder.
 
 3. Data_cleansing.py: This script replaces all brake pressure values which are below or equal to 0.2  with the value 0 to obtain more precise results. It also filters out the timestamps attribute values, which are not considered when clustering the data. The clean data (including timestamps) and filtered data (without timestamps) are saved in the "Clustering-input_data" folder"
+
+4. Qualitative_abstraction.py: This script is used as part of the approach extension in order to investigate whether data abstraction improve the clustering results or not. The script provides 5 abstraction functions. 2 functions compute 2 different abstraction models for the steering angle and 3 functions compute 3  different abstraction models for the vehicle speed. It also provide 1 abstraction model for the acceleration pedal and 1 model for the brake pressure. The resulting abstracted clustering input data is saved in the folder results/<location>/Abstraction_results.
+In addition, this script perfoms clustering using 6 combinations of the computed abstracted models of the steering angle and vehicle speed. The clustering validation results for the Pearson correlation metric and the three internal validation metric; Sihlouette score, CH index and DB index computed for clustering when using these combinations are also saved in results/<location>/Abstraction_results. For comparing the clustering results with the one sobtained using the  clustering approach  with the original data regarding test case generation, we create in the script,  the Cluster-Episode Graphs using these combinations with the clusters and episodes obtained using K-means combined with an auto-enocder. Similarly, the resulting graphs are saved in results/<location>/Abstraction_results.
+   
 
 II. Data clustering:
 
