@@ -136,7 +136,7 @@ def main():
 
 # Visualize the clustered data for each technique
 def plot_clusters(X, labels, title, nb_cluster):
-    clusters_labels = [k for k in nb_cluster]
+    clusters_labels = [k for k in range(nb_cluster)]
     plt.figure(figsize=(10, 6))
     plt.scatter(X['timestamps'], X['vehicle_speed'], c=labels, s=10, label=clusters_labels)
     plt.xlabel('Timestamps')
